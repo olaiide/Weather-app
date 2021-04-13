@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    background-size: cover;
+    background-image: url(weather.jpg);
+    line-height: 1.3;
+    overflow-x: hidden;
+}
+.search{
+    display: flex;
+    justify-content: center;
+}
+.search label{
+  position: relative;
+  padding-top: 30px;
+}
+input[type="text"]{
+    border: none;
+    width: 250px;
+    height: 45px;
+    padding: 0 15px;
+    position: relative;
+    outline: none;
+    font-size: 16px;
+    border-radius: 3px;
+}
+input:focus{
+    border: 2px solid burlywood;
+}
+button{
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    font-size: 1.5rem;
+    background-color: burlywood;
+    border: none;
+    outline:none;
+    padding:px;
+    border-radius: 3px;
+}
+.app-wrap{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgb(0,0,0));
+}
+.location{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    margin: 6px;
+}
+.location .city{
+    font-weight: 650;
+    margin-top: 20px;
+    margin-bottom:30px;
+    font-size: 32px;
+}
+.location .date{
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    top: -10px;
+}
+.content{
+    background: cornsilk;
+    width: 85%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    color: black;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+ .description, .temperature{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px rgba(128, 128, 128, 0.3);
+}
+.icon{
+    position: relative;
+    top: -20px;
+    font-size: 4rem;
+}
+.description{
+    position: relative;
+    top: -35px
+}
+.temperature{
+    position: relative;
+    top: -10px;
+}
+.content-2{
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
+.content-2 p{
+    text-transform: uppercase;
+    opacity: 0.7;
+    color: gray;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+ .--humidity, .--feels-like, .--sunrise, .--sunset, .--visibility, .--wind, .--pressure{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:80%;
+    height: 55px;
+    margin: auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.164);
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+}
+.humidity, .feels-like, .sunrise, .sunset, .visibility, .wind, .pressure{
+    padding-top: 3px;
+    font-size: 1.9rem;
+    margin-bottom: 5px;
+} 
+.--pressure {
+ border-bottom: none !important;
+}
+.spinner{
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    border-top: 1px solid rgba(255, 127, 80, 0.507);
+    animation: spinner 0.7s linear infinite;
+    margin: auto;
+    margin-top: 250px;
+
+}
+.spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   background-color: #024873;
+    height: 100%;
+    width: 100%;
+}
+@keyframes spinner{
+    to{
+        transform: rotate(360deg);
+    }
+}
+.error {
+    text-align: center;
+    width: 40%;
+    height: 35px;
+    background-color: rgba(211,56,56,0.8);
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.error h3{
+    color: white;
+    padding-top: 0.7rem;
+    font-size: 1rem;
+}

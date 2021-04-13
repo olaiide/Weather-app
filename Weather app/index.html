@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script rc="https://kit.fontawesome.com/a076d05399.js"></script>
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Weather App</title>
+</head>
+<body>
+  <div class="app-wrap">
+    <div class="search">
+      <label>
+          <input class="input" type="text" id="city" placeholder="search for a city..."/>
+          <button class="btn">Search</button>
+        </label>
+    </div>
+    <main class="location">
+        <div class="city">
+          <h4><span class="name">Ibadan</span>&nbsp;<span class="country">NG</span></h4>
+        </div>
+       <div class="date">Sunday 25 March 2020</div>
+    </main>
+    <section class="main-content">
+        <div class="content">
+           <div><img class="icon" src="http://openweathermap.org/img/wn/50n@2x.png"/></div>
+           <div class="description">Sunny</div>
+           <div class="temperature">25ºC</div>
+        </div>
+    </section>
+    <section class="asides">
+       <div class="content-2">
+             <div class="--humidity">
+                <p>Humidity</p>
+                <h4 class="humidity">73%</h4>
+             </div>
+             <div class="--feels-like">
+                <p>Feels Like</p>
+                <h4 class="feels-like">46ºC</h4>
+             </div>
+             <div class="--sunrise">
+                <p>Sunrise</p>
+                <h4 class="sunrise">06:20</h4>
+             </div>
+             <div class="--sunset">
+                <p>Sunset</p>
+                <h4 class="sunset">06:40</h4>
+             </div>
+             <div class="--visibility">
+                <p>Visibility</p>
+                <h4 class="visibility">67km</h4>
+             </div>
+             <div class="--wind">
+                <p>Wind Speed</p>
+                <h4 class="wind">3.42m/s</h4>
+             </div>
+             <div class="--pressure">
+                <p>Pressure</p>
+                <h4 class="pressure">1016hPa</h4>
+             </div>
+       </div>
+    </section>
+ </div>
+ <div class="spin">
+    <div class="spinner">
+
+    </div>
+ </div>
+ <script src="app.js"></script>
+</body>       
+</html>
